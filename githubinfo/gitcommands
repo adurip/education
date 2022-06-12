@@ -1,7 +1,7 @@
 
 Genration of the keys : Ubuntu
 
-ssh-keygen -t ed25519 -C "adurip@hotmail.com"
+ssh-keygen -t ed25519 -C "email_id"
 
 eval "$(ssh-agent -s)"
 
