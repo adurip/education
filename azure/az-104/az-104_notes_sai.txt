@@ -1,0 +1,10 @@
+Install power shell
+Install Az
+	Install-Module -Name Az -AllowClobber -Repository PSGallery
+	Get-InstalledModule -Name Az -AllVersions 
+Connect to Azure account
+	Connect-AzAccount
+	Set-AzContext
+	Get-AzTenant
+	Get-AzSubscription
+	
