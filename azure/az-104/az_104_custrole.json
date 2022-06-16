@@ -1,0 +1,15 @@
+{
+   "Name": "Support Request Contributor (Custom)",
+   "IsCustom": true,
+   "Description": "Allows to create support requests",
+   "Actions": [
+       "Microsoft.Resources/subscriptions/resourceGroups/read",
+       "Microsoft.Support/*"
+   ],
+   "NotActions": [
+   ],
+   "AssignableScopes": [
+       "/providers/Microsoft.Management/managementGroups/Prasad_Management_Group",
+       "/subscriptions/797a5fc3-f452-40e7-b150-25203c3f9cdb"
+   ]
+}
