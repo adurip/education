@@ -7,4 +7,8 @@ Connect to Azure account
 	Set-AzContext
 	Get-AzTenant
 	Get-AzSubscription
+
+Remove Role
+scope = (Get-AzRoleDefinition -Name 'Support Request Contributor (Custom)').AssignableScopes[0]
+Remove-AzRoleAssignment -ObjectId '[object_ID]' -RoleDefinitionName 'Support Request Contributor (Custom)' -Scope $scope
 	
