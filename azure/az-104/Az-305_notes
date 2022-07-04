@@ -1,0 +1,14 @@
+Open Windows PowerShell
+Login to Azure using
+  Connect-AzAccount
+Get-AzResource -TagName Type : to get resources with tag Type
+(Get-AzResource -TagName Type).Name
+(Get-AzResource -TagName Type).Location
+(Get-AzResource -TagName Type).ResourceGroupName
+Get-AzResource -Tag @{"Type"="Language"}
+Get-AzResourceGroup -Tag @{"Language"="Samskrutam"}
+
+$tags = @{"LanguageType"="Any"}
+$resource = Get-AzResource -Name RGTLanguage -ResourceGroupName RGTemplates
+echo $resource.id
+New-AzTag -ResourceId $resource.id -Tag $tags
