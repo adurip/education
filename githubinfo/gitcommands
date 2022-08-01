@@ -17,3 +17,26 @@ github commands:
 Copying a branch
 
 github branch -c githubcommands
+
+Branches
+  sivanandalahari
+  homework
+  textbooks_Q2Y22
+
+git branch
+
+git switch -c sivanandalahari
+git add *
+git status
+git commit *
+git push --set-upstream origin sivanandalahari (setup a remote branch)
+git push -d origin sivanandalahari
+git switch main
+git merge exec_w4
+git push
+git push --set-upstream origin siva_w4
+
+
+5 increase Puja room to 5x5
+7 skylight on top of stairs
+8 gazebo on top floor
